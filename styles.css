@@ -7,12 +7,18 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #000;
+    color: #ccc;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
-    background-color: #ff7e5f;
+    background-color: #a01000;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -58,7 +64,7 @@ header nav a:hover {
 }
 
 .hero button {
-    background-color: #ff7e5f;
+    background-color: #bd1300;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -68,7 +74,7 @@ header nav a:hover {
 }
 
 .hero button:hover {
-    background-color: #e56c4d;
+    background-color: #ff1900;
 }
 
 .hero a {
@@ -120,4 +126,41 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+.model-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.model-card {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2c2c2c; /* Темно-серый фон */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
 }

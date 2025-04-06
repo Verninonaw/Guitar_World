@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мир Электрогитар</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Мир Электрогитар</h1>
@@ -14,39 +17,94 @@
                 <li><a href="#history">История</a></li>
                 <li><a href="#models">Модели</a></li>
                 <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <h2>Ваш путь к музыке начинается здесь</h2>
-        <p>Выберите свою идеальную электрогитару</p>
-        <button><a href="#models">Посмотреть модели</a></button>
+        <div class="container">
+            <h2>Ваш путь к музыке начинается здесь</h2>
+            <p>Выберите свою идеальную электрогитару</p>
+            <button><a href="#models">Посмотреть модели</a></button>
+        </div>
     </section>
 
     <section id="history">
-        <h2>История электрогитары</h2>
-        <p>
-            лапрывлалывищаыва
-        </p>
+        <div class="container">
+            <h2>История электрогитары</h2>
+            <p>
+                Электрогитара была изобретена в начале 20 века как инструмент, способный усиливать звук. Она стала
+                символом рок-музыки и продолжает вдохновлять музыкантов по всему миру.
+            </p>
+        </div>
     </section>
 
     <section id="models">
-        <h2>Популярные модели</h2>
-        <div>
-            <img src="" alt="Fender Stratocaster">
-            <h3>Fender Stratocaster</h3>
-            <p>Звук: Яркий, чистый<br>Подходит для: Рока, попа, блюза</p>
+        <div class="container">
+            <h2>Популярные модели</h2>
+            <div class="model-grid">
+                <div class="model-card">
+                    <img src="" alt="Fender Stratocaster">
+                    <h3>Fender Stratocaster</h3>
+                    <p>Звук: Яркий, чистый<br>Подходит для: Рока, попа, блюза</p>
+                </div>
+
+                <div class="model-card">
+                    <img src="" alt="Fender Stratocaster">
+                    <h3>Fender Stratocaster</h3>
+                    <p>Звук: Яркий, чистый<br>Подходит для: Рока, попа, блюза</p>
+                </div>
+
+                <div class="model-card">
+                    <img src="" alt="Fender Stratocaster">
+                    <h3>Fender Stratocaster</h3>
+                    <p>Звук: Яркий, чистый<br>Подходит для: Рока, попа, блюза</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="gallery">
-        <h2>Галерея</h2>
-        <p>ываываывпыаыв</p>
+        <div class="container">
+            <h2>Галерея</h2>
+            <div class="gallery-grid">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
     </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <button class="btn">Отправить сообщение</button>
+        </div>
+    </section>
+
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span class="close-btn" onclick="closeOverlay()">&times;</span>
+            <h2>Свяжитесь с нами</h2>
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Ваш email" required>
+                <textarea id="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2025 Мир Электрогитар. Все права защищены.</p>
     </footer>
 </body>
+
 </html>
