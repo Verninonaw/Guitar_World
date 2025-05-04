@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мир Электрогитар</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="adaptive.css">
     <script src="script.js" defer></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -31,12 +33,12 @@
     </section>
 
     <section id="history">
-        <div class="container">
-            <h2>История электрогитары</h2>
-            <p>
-                Электрогитара была изобретена в начале 20 века как инструмент, способный усиливать звук. Она стала
-                символом рок-музыки и продолжает вдохновлять музыкантов по всему миру.
-            </p>
+        <div class="container history-content">
+            <img class="img-history" src="src/history.png" alt="">
+            <div class="history-text">
+                <h2>История электрогитары</h2>
+                <p class="text-history">Электрогитара появилась в 1930-х годах благодаря экспериментам с усиленным звуком. Первые модели создали Адольф Рикенбакер и Джордж Бошам (1931), затем Гибсон выпустил "Электрическую испанскую гитару" (1936). В 1950-х Фендер и Гибсон разработали культовые модели Stratocaster и Les Paul, которые стали стандартом. Эти инструменты предложили уникальное звучание, удобство игры и надёжность. Электрогитара стала ключевым инструментом рок-музыки, повлияв на развитие популярной музыки во всём мире.</p>
+            </div>
         </div>
     </section>
 
@@ -45,21 +47,21 @@
             <h2>Популярные модели</h2>
             <div class="model-grid">
                 <div class="model-card">
-                    <img src="" alt="Fender Stratocaster">
+                    <img src="src/stratocaster.png" alt="Fender Stratocaster">
                     <h3>Fender Stratocaster</h3>
                     <p>Звук: Яркий, чистый<br>Подходит для: Рока, попа, блюза</p>
                 </div>
 
                 <div class="model-card">
-                    <img src="" alt="Fender Stratocaster">
-                    <h3>Fender Stratocaster</h3>
-                    <p>Звук: Яркий, чистый<br>Подходит для: Рока, попа, блюза</p>
+                    <img src="src/lesPaul.png" alt="Gibson Les Paul">
+                    <h3>Gibson Les Paul</h3>
+                    <p>Звук: Теплый, насыщенный<br>Подходит для: Рока, джаза</p>
                 </div>
 
                 <div class="model-card">
-                    <img src="" alt="Fender Stratocaster">
-                    <h3>Fender Stratocaster</h3>
-                    <p>Звук: Яркий, чистый<br>Подходит для: Рока, попа, блюза</p>
+                    <img src="src/ibanez.png" alt="Ibanez RG Series">
+                    <h3>Ibanez RG Series</h3>
+                    <p>Звук: Агрессивный<br>Подходит для: Метала, шреда</p>
                 </div>
             </div>
         </div>
@@ -68,24 +70,45 @@
     <section id="gallery">
         <div class="container">
             <h2>Галерея</h2>
-            <div class="gallery-grid">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="gallery-cards">
+                <div class="gallery-card">
+                    <img src="src/gtr1.png" alt="">
+                    <p>Dean MAB 1 Michael Angelo Batio Signature</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="src/gtr2.png" alt="">
+                    <p>Paul Stanley's Ibanez PS1CM Cracked Mirror Guitar</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="src/gtr3.png" alt="">
+                    <p>Robbie Flynn Gibson Love / Death flying V!!!</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="src/gtr4.png" alt="">
+                    <p>ESP Explorer Sesshomaru Sig</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="src/gtr5.png" alt="">
+                    <p>ESP Alexi Laiho Signature Saw Tooth STD Black</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="src/gtr6.png" alt="">
+                    <p>ESP KH-3</p>
+                </div>
             </div>
-        </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2>Свяжитесь с нами</h2>
-            <button class="btn">Отправить сообщение</button>
+            <div>
+                <h2>Готов зазвучать на полную?</h2>
+                <h2 class="form-slogan">Оставь заявку и начни свой <br>путь к мастерству!</h2>
+                <form action="">
+                    <input type="text" placeholder="Иван" required>
+                    <input type="tel" placeholder="+7 999 999 999">
+                    <input class="btn" type="submit" value="ОТПРАВИТЬ">
+            </div>
+            </form>
         </div>
     </section>
 
