@@ -179,6 +179,38 @@ footer {
 }
 
 
+#blog {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#blog h2 {
+font-size: 40px;
+}
+
+#blog p, h2, h3 {
+    color: rgb(255, 255, 255);
+    padding: 10px 0px 10px 0px; 
+}
+
+.blog-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.blog-card img {
+    width: 560px;
+    height: 315px;
+}
+
+.blog-card p {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
 .overlay {
     display: none;
     position: fixed;
